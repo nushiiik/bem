@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.about {
+  font-family: "Lato", sans-serif;
+}
+.about .about__container {
+  max-width: 825px;
+  margin: 0 auto;
+}
+.about .about__header {
+  text-align: center;
+  margin: 0 0 70px 0;
+}
+.about .about__title {
+  margin: 0 0 30px 0;
+}
+.about .about__text {
+  font-weight: lighter;
+  color: #868585;
+  line-height: 1.8;
+}
+.about .about__row {
+  display: flex;
+  font-size: 0;
+  margin: 0 -15px;
+}
+.about .about__column {
+  flex: 0 0 33.333%;
+  padding: 0 15px;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 8.95px;
+  position: relative;
+  padding: 0 0 30px 0;
+}
+.title:after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 1px;
+  background-color: #000;
+  bottom: 0;
+  left: 50%;
+  margin: 0 0 0 -40px;
+}
+
+.item-about .item-about__icon {
+  width: 92px;
+  height: 92px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+  border: 2px solid #f0f0f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-about .item-about__title {
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: 3.52px;
+  margin: 0 0 35px 0;
+}
+.item-about .item-about__text {
+  font-size: 14px;
+  color: #868585;
+  line-height: 1.8;
+  text-align: center;
+}

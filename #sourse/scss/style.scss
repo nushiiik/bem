@@ -1,0 +1,90 @@
+// Файл обнуляющих стилей
+@import "nullstyle";
+// Подключение шрифта
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+.about {
+  font-family: 'Lato', sans-serif;
+
+  .about__container {
+    max-width: 825px;
+    margin: 0 auto;
+  }
+
+  .about__header {
+    text-align: center;
+    margin: 0 0 70px 0;
+  }
+
+  .about__title {
+    margin: 0 0 30px 0;
+  }
+
+  .about__text {
+    font-weight: lighter;
+    color: rgb(134, 133, 133);
+    line-height: 1.8;
+  }
+
+  .about__row {
+    display: flex;
+    font-size: 0;
+    margin: 0 -15px;
+  }
+
+  .about__column {
+    flex: 0 0 33.333%;
+    padding: 0 15px;
+  }
+}
+
+.title {
+  font-size: 34px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 8.95px;
+  position: relative;
+  padding: 0 0 30px 0;
+  &:after{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    background-color: #000;
+    bottom: 0;
+    left: 50%;
+    margin: 0 0 0 -40px;
+  }
+}
+
+.item-about {
+  .item-about__icon {
+    width: 92px;
+    height: 92px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    border: 2px solid #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item-about__title {
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.2;
+    letter-spacing: 3.52px;
+    margin: 0 0 35px 0;
+  }
+
+  .item-about__text {
+    font-size: 14px;
+    color: rgb(134, 133, 133);
+    line-height: 1.8;
+    text-align: center;
+  }
+
+}
